@@ -92,7 +92,7 @@ body {
 /* Lightbox CSS */
 
 .ilightbox {
-    width: 80vw;
+    width: 50vw;
     height: fit-content;
     background: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
