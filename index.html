@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./index.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+
+        <!-- LIGHTBOXES -->
+        <div class="lightboxbg close" id="l1">
+            <div class="ilightbox">
+                <h1>OIJC</h1>
+                <p>Lorem.</p>
+                <!-- <img src="rotate.gif"> -->
+                <i class="material-icons linked" onclick="document.getElementById('l1').classList.replace('open', 'close')" style="background:white;padding:10px;position:absolute;left:0;top:0">close</i>
+            </div>
+        </div>
+
+
+
+        <div class="header">
+            <h1 style="width:50vw" class="full-centered">Meet the blueberries.</h1>
+            <div style="bottom:-6px;position:absolute;">
+                <img style="width:100vw;" src="transitionOne.svg">
+            </div>
+        </div>
+        <div style="position:relative;padding:15rem 3.5rem;background:white;">
+            <div class="js-parallax-section" style="top:100px;right:0;width:fit-content;height:fit-content;position:absolute;left:50%;transform:translateX(calc(-50% + var(--m))) rotate(var(--r));transform-origin:center;transition-duration:.1s;">
+                <img style="width:70px;" src="BlueberryMania.svg">
+            </div>
+            <h1 class="black center">About BlueberryMania</h1>
+            <p class="black center">
+                BlueberryMania. Aaaaaaaah, the best thing in the world. Against the pretzels, they will win.
+            </p>
+            <br>
+            <p class="black center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <p class="black center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="fitcon" style="position:absolute;left:0;bottom:-5px;">
+                <img style="height:500px" src="House.svg">
+            </div>
+        </div>
+        <div class="founders" style="position:relative;padding:10rem 3.5rem">
+            <h1 class="white center">Our founders</h1>
+            <div class="list">
+                <div class="item center" onclick="document.getElementById('l1').classList.replace('close', 'open')">
+                    <div class="itemcon">
+                        <h3>Emerson Burnovski</h3>
+                        <h4>Banana.</h4>
+                    </div>
+                </div>
+
+                <div class="item center">
+                    <div class="itemcon">
+                        <h3>Emerson Burnovski</h3>
+                        <h4>Banana.</h4>
+                    </div>
+                </div>
+            </div>
+            <div style="bottom:-6px;position:absolute;left:0">
+                <img style="width:100vw;" src="transitionTwo.svg">
+            </div>
+        </div>
+        <div class="beblue">
+            <h1 class="full-centered center white" style="width:25vw;">Be the blueberry.</h1>
+            <div class="js-parallax-section" style="right:10%;top:20%;transform:translateY(calc(var(--f) * -1.2)) rotate(var(--ro));position:absolute;">
+                <img style="width:50px;" src="BlueberryMania.svg">
+            </div>
+            <div class="js-parallax-section" style="left:20%;top:60%;transform:translateY(calc(var(--f) * -1)) rotate(calc(var(--ro) * 3));position:absolute;">
+                <img style="width:35px;" src="BlueberryMania.svg">
+            </div>
+            <div class="js-parallax-section" style="left:50%;top:30%;transform:translateY(calc(var(--f) * -2.2)) rotate(calc(var(--ro) * 4));position:absolute;">
+                <img style="width:80px;" src="BlueberryMania.svg">
+            </div>
+            <div class="js-parallax-section" style="left:50%;top:80%;transform:translateY(calc(var(--f) * .8)) rotate(calc(var(--ro) * 10));position:absolute;">
+                <img style="width:67.5px;" src="BlueberryMania.svg">
+            </div>
+        </div>
+        <div class="footer">
+            <h1>BlueberryMania.</h1>
+            <h3>Copyright 2020 by BlueberryMania, Inc.</h3>
+        </div>
+        <div class="footerblank">
+            <h1>BlueberryMania.</h1>
+            <h3>Copyright 2020 by BlueberryMania, Inc.</h3>
+        </div>
+
+        <!-- JS -->
+        <script src='https://cdn.jsdelivr.net/npm/basicscroll@3.0.2/dist/basicScroll.min.js'></script>
+        <script src='script.js'></script>
+    </body>
+</html>

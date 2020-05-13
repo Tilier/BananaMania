@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'GT Walsheim', sans-serif;
+}
+
+.full-centered {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+
+.header {
+    height: 750px;
+    text-align: center;
+    background: rgb(85,135,249);
+    background: -moz-linear-gradient(0deg, rgba(85,135,249,1) 0%, rgba(91,169,251,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(85,135,249,1) 0%, rgba(91,169,251,1) 100%);
+    background: linear-gradient(0deg, rgba(85,135,249,1) 0%, rgba(91,169,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5587f9",endColorstr="#5ba9fb",GradientType=1);
+    color: white;
+    position: relative;
+}
+
+@font-face {
+    font-family: "GT Walsheim";
+    src: url("./GTWalsheimPro-Regular.ttf");
+}
+
+.founders {
+    background: rgb(108,67,255);
+    background: -moz-linear-gradient(0deg, rgba(108,67,255,1) 0%, rgba(163,91,251,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(108,67,255,1) 0%, rgba(163,91,251,1) 100%);
+    background: linear-gradient(0deg, rgba(108,67,255,1) 0%, rgba(163,91,251,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c43ff",endColorstr="#a35bfb",GradientType=1);
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.fitcon {
+    width: fit-content;
+    height: fit-content;
+}
+
+.founders .list {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 75vw;
+    column-gap: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+}
+
+.founders .list .item {
+    width: 100%;
+    background: rgba(265,265,265,.8);
+    border-radius: .75em;
+    box-shadow: 0 0 20px rgba(2, 26, 83, 0.1);
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.founders .list .item:hover {
+    background: rgba(265,265,265,1);
+}
+
+.founders .list .item:active {
+    transform: translateY(2px);
+}
+
+.founders .list .item .itemcon {
+    padding: 3rem;
+}
+
+/* Lightbox CSS */
+
+.ilightbox {
+    width: 80vw;
+    height: fit-content;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 100px;
+    border-radius: 7px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition-duration: .5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.ilightbox h1 {
+    margin: 0;
+}
+
+.lightboxbg {
+    background: rgba(0,0,0,0.4);
+    width: 200vw;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    z-index: 60;
+    overflow: hidden;
+}
+
+.lightboxbg.close {
+    opacity: 0;
+    margin-top: 300vh;
+    transition: opacity .5s 0s, transform .5s 0s, margin-top 0s .5s;
+    transform: translate(-50%,-50%) scale(0.9);
+    left: 50%;
+    top: 50%;
+}
+
+.lightboxbg.open {
+    opacity: 1;
+    margin-top: 0;
+    transition: opacity .5s 0s, transform .5s 0s, margin-top 0s 0s;
+    transform: translate(-50%,-50%) scale(1);
+    left: 50%;
+    top: 50%;
+}
+
+/* End of lightbox CSS */
+
+.linked {
+    cursor: pointer;
+}
+
+.beblue {
+    background: #9CA8FF;
+    height: 800px;
+    position: relative;
+}
+
+.footer {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    padding: 3rem;
+}
+
+.footerblank {
+    opacity: 0;
+    padding: 3rem;
+}
